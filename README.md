@@ -43,7 +43,7 @@ Distance <= 0.6 → Bunny
 Distance > 0.6 → Unknown
 ```
 
-To ensure smooth performance, the reference image (`images/bunny.jpeg`) is processed and encoded exactly once during the application's startup sequence. The resulting encoding is cached in memory and reused for all subsequent distance comparisons against live webcam frames. 
+To ensure smooth performance, the reference image (`images/bunny.jpeg`) is processed and encoded exactly once during the application's startup sequence. The resulting encoding is cached in memory and reused for all subsequent distance comparisons against live webcam frames.
 
 *Note: The calculated distance represents Euclidean distance in the 128-dimensional feature space, not a confidence percentage.*
 
