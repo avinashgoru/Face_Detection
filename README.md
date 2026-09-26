@@ -18,11 +18,11 @@ This project demonstrates a streamlined computer vision pipeline—progressing f
 
 ## 4. Features
 
-- **Real-Time Detection**: Processes frames instantly using bounding box calculations.
+- **Real-Time Detection**: Processes webcam frames continuously and detects faces in real time.
 - **Single-Reference Recognition**: Encodes a single reference photo (`images/bunny.jpeg`) and intelligently identifies if a webcam face is a match or "Unknown".
-- **Multi-Face Tracking**: Simultaneously tracks and identifies an arbitrary number of faces within the frame independently.
+- **Multi-Face Detection & Recognition**: Simultaneously tracks and identifies an arbitrary number of faces within the frame independently.
 - **Euclidean Distance Display**: Renders raw face distance calculations out to 2 decimal places in real-time.
-- **Graceful Error Handling**: Bullet-proof environment and runtime guards that prevent tracebacks during frame drops, missing references, or hardware disconnects.
+- **Graceful Error Handling**: Robust Error Handling that prevent tracebacks during frame drops, missing references, or hardware disconnects.
 - **Dynamic Configuration**: Easy top-level variable configuration (tolerance, reference name, paths).
 
 ## 5. Project Structure
@@ -47,7 +47,7 @@ Face Detection/
 ## 6. Installation
 
 1. Ensure you have Python installed.
-2. Install the exact required dependencies:
+2. Install the required project dependencies:
 
    ```bash
    pip install -r requirements.txt
